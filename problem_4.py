@@ -5,11 +5,8 @@ def largestPalindromeProduct(n):
 	a = int('9' * n)
 	b = int('1' + '0' * (n - 1))
 
-	# Generate a list of all palindromes between the boundary of max and min n digit integers
-	full_list = list(range(a ** 2, b ** 2, -1))
-
-	# Filter for only palindromes
-	pali_list = [i for i in full_list if str(i) == str(i)[::-1]]
+	# Generate a list of all palindromes between the largest and smallest possible products of 2 n digit numbers
+	pali_list = [i for i in range(a ** 2, b ** 2, -1) if str(i) == str(i)[::-1]]
 
 	# Loop through palindrome list from the top and check for factors
 	for pali in pali_list:
