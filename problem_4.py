@@ -14,9 +14,9 @@ def largestPalindromeProduct(n):
 	# Loop through palindrome list from the top and check for factors
 	for pali in pali_list:
 		for i in range(a, b, -1):
-			# If the remainder is zero then return the palindrome as there are 2 factors of length n digits
-			if pali % i == 0:
-				return pali
 			# If the result is greater than the largest possible n digit number then move on the the next biggest palindrome
 			if pali / i > a:
 				break
+			# If the remainder is zero then return the palindrome as there are 2 factors of length n digits
+			if pali % i == 0:
+				return pali
