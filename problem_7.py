@@ -1,4 +1,4 @@
-from common_functions import allPrimeFactors
+from common_functions import isPrime
 
 def nthPrime(n):
 	""" Return the nth prime """
@@ -8,7 +8,7 @@ def nthPrime(n):
 
 	prime_check = 3
 	while prime_counter < n:
-		if len(allPrimeFactors(prime_check)) == 1: # This check is slow at high values of n
+		if isPrime(prime_check):
 			prime_counter += 1
 			largest_prime = prime_check
 		prime_check += 2

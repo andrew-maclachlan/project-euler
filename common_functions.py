@@ -23,3 +23,12 @@ def allPrimeFactors(number, prime_list = None) -> list:
 
 	# Return a list of prime factors
 	return prime_list
+
+def isPrime(number) -> bool:
+	""" Returns True if the provide integer is prime """
+
+	for i in range(2, number):
+		if number % i == 0:
+			return False
+	
+	return True
