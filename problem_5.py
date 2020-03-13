@@ -1,8 +1,7 @@
-# Some other useful functions
-from common_functions import allPrimeFactors
-
 def smallestMult(n) -> int:
 	"""Returns the smallest positive integer that is evenly divisible by all the numbers from 1 to n."""
+
+	from common_functions import allPrimeFactors
 
 	# Generate a list of integers from 1 to n
 	integer_list = list(range(1, n + 1))

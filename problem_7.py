@@ -1,7 +1,7 @@
-from common_functions import isPrime
-
 def nthPrime(n):
 	""" Return the nth prime """
+
+	from common_functions import isPrime
 
 	largest_prime = 2
 	prime_counter = 1
