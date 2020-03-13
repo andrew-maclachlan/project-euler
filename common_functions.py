@@ -32,3 +32,12 @@ def isPrime(number) -> bool:
 			return False
 	
 	return True
+
+def listProduct(list) -> int:
+	""" Returns the product of a list of integers. """
+
+	product = 1
+	for i in list:
+		product = product * i
+
+	return product
