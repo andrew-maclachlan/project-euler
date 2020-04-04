@@ -31,9 +31,18 @@ def isPrime(number) -> bool:
 	if number < 2:
 		return False
 
-	for i in range(2, number):
+	if number == 2:
+		return True
+
+	i = 2
+	while i**2 <= number:
 		if number % i == 0:
 			return False
+		
+		if i == 2:
+			i -= 1
+		
+		i += 2
 	
 	return True
 
