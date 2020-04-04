@@ -25,7 +25,11 @@ def allPrimeFactors(number, prime_list = None) -> list:
 	return prime_list
 
 def isPrime(number) -> bool:
-	""" Returns True if the provide integer is prime """
+	""" Returns True if the provide integer is prime
+	"""
+
+	if number < 2:
+		return False
 
 	for i in range(2, number):
 		if number % i == 0:
