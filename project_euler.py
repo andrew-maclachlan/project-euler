@@ -116,8 +116,7 @@ def smallestMult(n) -> int:
 			diff_count = prime_factors.count(number) - final_list.count(number)
 
 			# Append the number of missing factors to the final list
-			for i in range(diff_count):
-				final_list.append(number)
+			final_list.append(list(diff_count))
 
 	# Calculate the product of the integers in the final list
 	max_product = 1
@@ -139,9 +138,7 @@ def sumSquareDifference(n) -> int:
 		raise ValueError("Input must be positive.")
 
 	# Sum the squares
-	sum_squares = 0
-	for i in range(1, n + 1):
-		sum_squares += i ** 2
+	sum_square = sum(map(lambda i: i ** 2, range(1, n + 1)))
 
 	# Square the sums
 	square_sums = sum(range(1, n + 1)) ** 2
@@ -245,9 +242,4 @@ def primeSummation(n) -> int:
 
 	from common_functions import isPrime
 
-	primes_sum = 0
-	for i in range(n):
-		if isPrime(i):
-			primes_sum += i
-
-	return primes_sum
+	return sum(filter(isPrime, range(n)))
