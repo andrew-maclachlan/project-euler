@@ -9,7 +9,3 @@ def powerDigitSum(n)->int:
 		digit_sum += int(i)
 
 	return digit_sum
-
-print(powerDigitSum(15))
-print(powerDigitSum(128))
-print(powerDigitSum(1000))
