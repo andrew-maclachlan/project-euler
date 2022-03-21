@@ -13,7 +13,7 @@ def smallestMult(n) -> int:
 	from common_functions import allPrimeFactors
 
 	# Generate a list of integers from 1 to n
-	integer_list = list(range(1, n + 1))
+	integer_list = [*range(1, n + 1)]
 
 	# List of factors that will provide the min product
 	final_list = []

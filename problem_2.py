@@ -1,6 +1,6 @@
 # Problem 2
 # https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-2-even-fibonacci-numbers
-def fiboEvenSum(n):
+def fiboEvenSum(n) -> int:
 	"""
 	Returns the sum of all even numbers in the fibonacci sequence of length n.
 	"""

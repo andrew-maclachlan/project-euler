@@ -10,7 +10,8 @@ def largestPrimeFactor(n) -> int:
 	if n < 2:
 		raise ValueError("Input must be greater than 1.")
 
-	# Find the smallest factor and divide the input integer by this smallest factor. Repeat with the result until the final, largest, factor is found.
+	# Find the smallest factor and divide the input integer by this smallest factor.
+	# Repeat with the result until the final, largest, factor is found.
 	factor_check = 2
 	while factor_check < n:
 		if n % factor_check == 0:
