@@ -1,13 +1,19 @@
-# Problem 1
-# https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-1-multiples-of-3-and-5
 def multiplesOf3and5(n) -> int:
+    """Sum the multiples of 3 or 5 below n.
+
+    Args:
+        n (int):
+
+    Returns:
+        int:
+
+    Raises:
+        ValueError: If arg is not of type int
     """
-    Returns the sum of all the multiples of 3 or 5 below n.
-    """
-    if type(n) is not type(int()):
+    if type(n) is not type(int):
         raise ValueError("Input must be of type int.")
     
-    # Create lists of the multiples of 3 and 5 up to the provided integer
+    # Create lists of the multiples of 3 and 5 up to the provided integer and convert to sets
     multiples_of_3 = {*range(3, n, 3)}
     multiples_of_5 = {*range(5, n, 5)}
 
