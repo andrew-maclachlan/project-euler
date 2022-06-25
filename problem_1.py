@@ -20,4 +20,4 @@ def multiples_of_3_and_5(n: int) -> int:
     # Sum the unique values in both lists
     return sum(multiples_of_3.union(multiples_of_5))
 
-# Test 3
+# Test 4
