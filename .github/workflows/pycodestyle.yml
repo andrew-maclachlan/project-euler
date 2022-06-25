@@ -29,5 +29,4 @@ jobs:
       env:
         FILES: '${{ steps.files.outputs.files_updated }} ${{ steps.files.outputs.files_created }}'
       run: |
-        echo $FILES
         pycodestyle --max-line-length=100 $FILES
