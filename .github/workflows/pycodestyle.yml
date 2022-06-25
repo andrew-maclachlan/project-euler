@@ -26,5 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pycodestyle
     - name: Analysing the code with pylint
+      env:
+        FILES: '${{ steps.files.outputs.files_updated }} ${{ steps.files.outputs.files_created }}'
       run: |
-        pycodestyle --max-line-length=100 $(git ls-files '*.py')
+        pycodestyle --max-line-length=100 FILES
