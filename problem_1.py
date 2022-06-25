@@ -1,4 +1,4 @@
-def multiplesOf3and5(n) -> int:
+def multiples_of_3_and_5(n: int) -> int:
     """Sum the multiples of 3 or 5 below n.
 
     Args:
