@@ -1,6 +1,8 @@
 name: Pycodestyle
 
-on: workflow_dispatch
+on:
+  pull_request:
+    types: [opened, reopened, edited]
 
 jobs:
   build:
