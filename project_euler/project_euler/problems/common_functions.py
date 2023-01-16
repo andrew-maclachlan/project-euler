@@ -2,7 +2,6 @@
 """
 
 from typing import List
-from math import sqrt, ceil
 
 
 def all_prime_factors(number: int) -> List[int]:
@@ -11,7 +10,7 @@ def all_prime_factors(number: int) -> List[int]:
     return _all_prime_factors_recursion(number)
 
 
-def _all_prime_factors_recursion(number: int, prime_list=None):
+def _all_prime_factors_recursion(number: int, prime_list=None) -> List[int]:
     # Initialise List
     if prime_list is None:
         prime_list = []
@@ -47,19 +46,13 @@ def is_prime(n: int) -> bool:
         return True
 
     for factor_check in range(3, int(n / 2), 2):
+        # If n has a factor then it's not prime
         if n % factor_check == 0:
             return False
 
+        # If the square of the factor check is greater than n, all further potential factors would
+        # have had their pair already checked, so n is prime.
+        if factor_check ** 2 > n:
+            return True
+
     return True
-
-
-def listProduct(list) -> int:
-	"""
-	Returns the product of a list of integers.
-	"""
-
-	product = 1
-	for i in list:
-		product = product * i
-
-	return product
