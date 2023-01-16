@@ -6,19 +6,24 @@ remainder.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
 """
 
-from numpy import prod
 from collections import Counter
+from numpy import prod
 
-from .common_functions import allPrimeFactors
+from .common_functions import all_prime_factors
 
 
-def smallest_mult(max_int: int) -> int:
-    """Return the smallest positive integer that is evenly divisible by all the numbers from 1 to
-    max_int.
+def smallest_mult(n: int) -> int:
+    """Return the smallest positive integer that is evenly divisible by all the numbers from 1 to n.
+
+    Args:
+        n (int):
+
+    Returns:
+        int
     """
     # Count the factors of all numbers up to and including max_int
-    prime_factors_count = [Counter([str(factor) for factor in allPrimeFactors(integer)])
-                           for integer in range(1, max_int + 1)]
+    prime_factors_count = [Counter([str(factor) for factor in all_prime_factors(integer)])
+                           for integer in range(1, n + 1)]
 
     # Take the maximum count of each factor using Counter union
     max_prime_factors_count = Counter()

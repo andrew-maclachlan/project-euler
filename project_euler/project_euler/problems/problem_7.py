@@ -1,26 +1,29 @@
-# Problem 7
-# https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-7-10001st-prime
+"""Problem 7: 10001st prime
 
-from common_functions import isPrime
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 
-def nthPrime(n) -> int:
-	"""
-	Return the nth prime.
-	"""
-	if type(n) is not type(int()):
-		raise ValueError("Input must be of type int.")
+What is the nth prime number?
+"""
 
-	if n < 1:
-		raise ValueError("Input must be positive.")
+from .common_functions import is_prime
 
-	largest_prime = 2
-	prime_counter = 1
 
-	prime_check = 3
-	while prime_counter < n:
-		if isPrime(prime_check):
-			prime_counter += 1
-			largest_prime = prime_check
-		prime_check += 2
+def nth_prime(n: int) -> int:
+    """Return the nth prime.
 
-	return largest_prime
+    Args:
+        n (int):
+
+    Returns:
+        int
+    """
+    prime_counter = 1
+    prime_to_check = 3
+
+    while prime_counter < n:
+        if is_prime(prime_to_check):
+            prime_counter += 1
+            largest_prime = prime_to_check
+        prime_to_check += 2
+
+    return largest_prime

@@ -10,12 +10,18 @@ even-valued terms.
 """
 
 
-def fibo_even_sum(fibo_lim) -> int:
+def fibo_even_sum(n: int) -> int:
     """Return the sum of all even numbers in the fibonacci sequence of length n.
+
+    Args:
+        n (int):
+    
+    Returns:
+        int
     """
     # Generate a fibonacci sequence of length n
     fibo_seq = [1, 2]
-    while fibo_seq[-1] < fibo_lim:
+    while fibo_seq[-1] < n:
         fibo_seq.append(sum(fibo_seq[-2:]))
 
     # Return the sum of all even numbers in the sequence

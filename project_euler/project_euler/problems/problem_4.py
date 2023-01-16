@@ -7,13 +7,19 @@ Find the largest palindrome made from the product of two n-digit numbers.
 """
 
 
-def largest_palindrome_product(num_digits: int) -> int:
+def largest_palindrome_product(n: int) -> int:
     """Return the largest palindrome made from the product of two numbers with the number of digits
-    num_digits.
+    n.
+
+    Args:
+        n (int):
+
+    Returns:
+        int
     """
     # Generate the highest and lowest integers with number of digits num_digits
-    num_min = int('1' + '0' * (num_digits - 1))
-    num_max = int('9' * num_digits)
+    num_min = int('1' + '0' * (n - 1))
+    num_max = int('9' * n)
 
     # Generate a list of all palindromes between the largest and smallest possible products
     palindrome_list = [i for i in range(num_min ** 2, num_max ** 2) if str(i) == str(i)[::-1]]

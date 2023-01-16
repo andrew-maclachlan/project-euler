@@ -1,56 +1,57 @@
-def allPrimeFactors(number) -> list:
-	"""
-	Returns a list of all prime factors of a given integer.
-	"""
-	# Return a list of prime factors
-	return _allPrimeFactorsIter(number)
+"""Sub-module of project-euler containing any functions that are used by more than one problem.
+"""
 
-def _allPrimeFactorsIter(number, prime_list = None):
-		# Initialise List
-		if prime_list is None:
-			prime_list = []
+from typing import List
+from math import sqrt, ceil
 
-		# Initialise a variable to try as a factor
-		factor_check = 2
 
-		# Find the smallest factor and divide the given integer by this smallest factor. Repeat with the result until there is a list of all factors.
-		while factor_check <= number:
-			# If the division has no remainder then factor_check is factor.
-			if number % factor_check == 0:
-				# Append the factor to the list
-				prime_list.append(factor_check)
+def all_prime_factors(number: int) -> List[int]:
+    """Return a list of all prime factors of a given integer.
+    """
+    return _all_prime_factors_recursion(number)
 
-				# Repeat the check with the result of the number divided by the smallest factor.
-				return _allPrimeFactorsIter(number / factor_check, prime_list)
-			# If there is a remainder then factor_check is not a factor so increment by 1 and try the next highest integer.
-			else:
-				factor_check += 1
 
-		# Return a list of prime factors
-		return prime_list
+def _all_prime_factors_recursion(number: int, prime_list=None):
+    # Initialise List
+    if prime_list is None:
+        prime_list = []
 
-def isPrime(number) -> bool:
-	"""
-	Returns True if the provide integer is prime.
-	"""
+    # Check all potential factors incrementally
+    for factor_check in range(2, number + 1):
+        # If the division has no remainder then factor_check is a factor.
+        if number % factor_check == 0:
+            # Append the factor to the list
+            prime_list.append(factor_check)
 
-	if number < 2:
-		return False
+            # Repeat the check with the result of the number divided by the smallest factor.
+            return _all_prime_factors_recursion(int(number / factor_check), prime_list)
 
-	if number == 2:
-		return True
+    # Once all numbers are exhausted then return the list of factors
+    return prime_list
 
-	i = 2
-	while i**2 <= number:
-		if number % i == 0:
-			return False
-		
-		if i == 2:
-			i -= 1
-		
-		i += 2
-	
-	return True
+
+def is_prime(n: int) -> bool:
+    """Check if a number is prime.
+
+    Args:
+        n (int):
+
+    Returns:
+        bool
+    """
+
+    if n < 2:
+        return False
+
+    if n == 2:
+        return True
+
+    for factor_check in range(3, int(n / 2), 2):
+        if n % factor_check == 0:
+            return False
+
+    return True
+
 
 def listProduct(list) -> int:
 	"""
