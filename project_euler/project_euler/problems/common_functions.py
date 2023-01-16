@@ -44,7 +44,10 @@ def is_prime(n: int) -> bool:
     if n == 2:
         return True
 
-    for factor_check in range(3, int(n / 2), 2):
+    if n % 2 == 0:
+        return False
+
+    for factor_check in range(3, n, 2):
         # If n has a factor then it's not prime
         if n % factor_check == 0:
             return False
