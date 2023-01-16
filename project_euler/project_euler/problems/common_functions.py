@@ -2,8 +2,10 @@ def allPrimeFactors(number) -> list:
 	"""
 	Returns a list of all prime factors of a given integer.
 	"""
+	# Return a list of prime factors
+	return _allPrimeFactorsIter(number)
 
-	def _allPrimeFactorsIter(number, prime_list = None):
+def _allPrimeFactorsIter(number, prime_list = None):
 		# Initialise List
 		if prime_list is None:
 			prime_list = []
@@ -26,9 +28,6 @@ def allPrimeFactors(number) -> list:
 
 		# Return a list of prime factors
 		return prime_list
-
-	# Return a list of prime factors
-	return allPrimeFactorsIter(number)
 
 def isPrime(number) -> bool:
 	"""
