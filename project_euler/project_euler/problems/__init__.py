@@ -12,8 +12,10 @@ from .problem_7 import nth_prime
 from .problem_8 import largest_product_in_a_series
 from .problem_9 import special_pythagorean_triplet
 from .problem_10 import prime_summation
+from .problem_11 import largest_grid_product
 
 __all__ = ['all_prime_factors', 'is_prime',
            'multiples_of_3_and_5', 'fibo_even_sum', 'largest_prime_factor',
            'largest_palindrome_product', 'smallest_mult', 'sum_square_difference', 'nth_prime',
-           'largest_product_in_a_series', 'special_pythagorean_triplet', 'prime_summation']
+           'largest_product_in_a_series', 'special_pythagorean_triplet', 'prime_summation',
+           'largest_grid_product']
