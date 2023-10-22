@@ -1,12 +1,7 @@
 # problem 21
 # https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-21-amicable-numbers
 
-def proper_devisors(n):
-    """
-    Returns the set of all proper divisors of an integer n
-    Proper Divisors: https://en.wikipedia.org/wiki/Divisor#proper_divisor
-    """
-    return {i for i in range(1, n) if n % i == 0}
+from common_functions import proper_devisors
 
 def is_amicable(n):
     """

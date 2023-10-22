@@ -1,4 +1,4 @@
-def allPrimeFactors(number) -> list:
+def allPrimeFactors(number):
 	"""
 	Returns a list of all prime factors of a given integer.
 	"""
@@ -30,7 +30,7 @@ def allPrimeFactors(number) -> list:
 	# Return a list of prime factors
 	return allPrimeFactorsIter(number)
 
-def isPrime(number) -> bool:
+def isPrime(number):
 	"""
 	Returns True if the provide integer is prime.
 	"""
@@ -53,7 +53,7 @@ def isPrime(number) -> bool:
 	
 	return True
 
-def listProduct(list) -> int:
+def listProduct(list):
 	"""
 	Returns the product of a list of integers.
 	"""
@@ -63,3 +63,10 @@ def listProduct(list) -> int:
 		product = product * i
 
 	return product
+
+def proper_devisors(n):
+    """
+    Returns the set of all proper divisors of an integer n
+    Proper Divisors: https://en.wikipedia.org/wiki/Divisor#proper_divisor
+    """
+    return {i for i in range(1, n) if n % i == 0}
