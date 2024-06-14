@@ -5,7 +5,17 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the given number?
 """
 
-from common_functions import with_caching
+def with_caching(func):
+    """Wrapper to support caching in functions."""
+    cache = {}
+
+    def wrapper(*args):
+        if args in cache:
+            return cache[args]
+        result = func(*args)
+        cache[args] = result
+        return result
+    return wrapper
 
 @with_caching
 def largest_prime_factor(number: int) -> int:
