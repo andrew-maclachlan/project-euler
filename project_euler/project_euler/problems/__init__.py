@@ -14,9 +14,10 @@ from .problem_9 import special_pythagorean_triplet
 from .problem_10 import prime_summation
 from .problem_11 import largest_grid_product
 from .problem_12 import divisible_triangle_number
+from .problem_13 import largeSum
 
-__all__ = ['all_prime_factors', 'is_prime',
-           'multiples_of_3_and_5', 'fibo_even_sum', 'largest_prime_factor',
-           'largest_palindrome_product', 'smallest_mult', 'sum_square_difference', 'nth_prime',
-           'largest_product_in_a_series', 'special_pythagorean_triplet', 'prime_summation',
-           'largest_grid_product', 'divisible_triangle_number']
+__all__ = [
+    'all_prime_factors', 'is_prime', 'multiples_of_3_and_5', 'fibo_even_sum',
+    'largest_prime_factor', 'largest_palindrome_product', 'smallest_mult', 'sum_square_difference',
+    'nth_prime', 'largest_product_in_a_series', 'special_pythagorean_triplet', 'prime_summation',
+    'largest_grid_product', 'divisible_triangle_number', 'largeSum']
