@@ -27,21 +27,31 @@ def longestCollatzSequence(limit: int) -> int:
 	Returns:
 		int: The longest sequence length
 	"""
+	# Generate all the sequences
+	all_sequences = [_generate_sequence(i) for i in range(1, limit)]
 
-	max_sequence_length = 0
-	max_sequence_number = 1
+	# Caluculate the longest sequence along with the index
+	max_sequence_length = max(enumerate(all_sequences), key=lambda x: len(x[1]))
 
-	for i in range(1, limit):
-		n = i
-		sequence_length = 1
-		while n != 1:
-			if n % 2 == 0:
-				n = n / 2
-			else:
-				n = n * 3 + 1
-			sequence_length += 1
-		if sequence_length > max_sequence_length:
-			max_sequence_length = sequence_length
-			max_sequence_number = i
+	# Add 1 to the index as the range started at 1
+	return int(max_sequence_length[0] + 1)
 
-	return int(max_sequence_number)
+
+def _generate_sequence(i):
+	# Initialise the sequence with the number testing
+	sequence = [i]
+
+	# While the end of the sequence is not 1 (the stop condition) generate the next number
+	while sequence[-1] != 1:
+		sequence.append(_next_number(sequence[-1]))
+	
+	return sequence
+
+
+def _next_number(n):
+	# If even
+	if n % 2 == 0:
+		return n / 2
+	
+	# If odd
+	return n * 3 + 1
