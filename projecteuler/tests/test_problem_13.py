@@ -1,7 +1,7 @@
 """Tests for Problem 13.
 """
 
-from ..problems import largeSum
+from projecteuler import largeSum
 
 testNums = [
     37107287533902102798797998220837590246510135740250,
