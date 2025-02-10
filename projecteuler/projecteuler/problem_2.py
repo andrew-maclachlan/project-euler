@@ -15,7 +15,7 @@ def fibo_even_sum(n: int) -> int:
 
     Args:
         n (int):
-    
+
     Returns:
         int
     """
