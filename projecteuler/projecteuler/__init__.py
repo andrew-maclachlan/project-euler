@@ -15,6 +15,7 @@ from .problem_10 import prime_summation
 from .problem_11 import largest_grid_product
 from .problem_12 import divisible_triangle_number
 from .problem_13 import largeSum
+from .problem_14 import longestCollatzSequence
 
 problem_1 = multiples_of_3_and_5
 problem_2 = fibo_even_sum
@@ -29,6 +30,7 @@ problem_10 = prime_summation
 problem_11 = largest_grid_product
 problem_12 = divisible_triangle_number
 problem_13 = largeSum
+problem_14 = longestCollatzSequence
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -45,6 +47,7 @@ __all__ = [
     'problem_11', 'largest_grid_product',
     'problem_12', 'divisible_triangle_number',
     'problem_13', 'largeSum',
+    'problem_14', 'longestCollatzSequence'
 ]
 
 __version__ = "0.1.0"
