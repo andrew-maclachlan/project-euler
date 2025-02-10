@@ -1,7 +1,7 @@
 """Tests for Problem 8.
 """
 
-from ..problems import largest_product_in_a_series
+from projecteuler import largest_product_in_a_series
 
 
 def test_1():

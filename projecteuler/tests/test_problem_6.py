@@ -1,7 +1,7 @@
 """Tests for Problem 6.
 """
 
-from ..problems import sum_square_difference
+from projecteuler import sum_square_difference
 
 
 def test_1():

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projecteuler"
+version = "0.1.0"
+description = "Solutions to Project Euler problems"
+readme = "README.md"
+authors = [{ name = "Andrew MacLachlan", email = "maclachlan.andrew@gmail.com" }]
+dependencies = ["numpy"]
+
+[tool.setuptools]
+packages = ["projecteuler"]

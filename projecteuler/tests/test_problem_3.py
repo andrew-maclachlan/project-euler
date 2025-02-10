@@ -1,7 +1,7 @@
 """Tests for Problem 3.
 """
 
-from ..problems import largest_prime_factor
+from projecteuler import largest_prime_factor
 
 
 def test_1():

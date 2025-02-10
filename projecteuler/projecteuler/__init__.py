@@ -19,3 +19,5 @@ __all__ = ['all_prime_factors', 'is_prime',
            'largest_palindrome_product', 'smallest_mult', 'sum_square_difference', 'nth_prime',
            'largest_product_in_a_series', 'special_pythagorean_triplet', 'prime_summation',
            'largest_grid_product']
+
+__version__ = "0.1.0"

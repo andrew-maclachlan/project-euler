@@ -1,7 +1,7 @@
 """Tests for Problem 5.
 """
 
-from ..problems import smallest_mult
+from projecteuler import smallest_mult
 
 
 def test_1():

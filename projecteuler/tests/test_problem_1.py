@@ -1,7 +1,7 @@
 """Tests for Problem 1.
 """
 
-from ..problems import multiples_of_3_and_5
+from projecteuler import multiples_of_3_and_5
 
 
 def test_1():
