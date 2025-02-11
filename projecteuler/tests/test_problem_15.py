@@ -1,4 +1,4 @@
-"""Tests for Problem 14.
+"""Tests for Problem 15.
 """
 
 from ..projecteuler import latticePaths
