@@ -17,37 +17,37 @@ from .problem_12 import divisible_triangle_number
 from .problem_13 import largeSum
 from .problem_14 import longestCollatzSequence
 
-problem_1 = multiples_of_3_and_5
-problem_2 = fibo_even_sum
-problem_3 = largest_prime_factor
-problem_4 = largest_palindrome_product
-problem_5 = smallest_mult
-problem_6 = sum_square_difference
-problem_7 = nth_prime
-problem_8 = largest_product_in_a_series
-problem_9 = special_pythagorean_triplet
-problem_10 = prime_summation
-problem_11 = largest_grid_product
-problem_12 = divisible_triangle_number
-problem_13 = largeSum
-problem_14 = longestCollatzSequence
+p1 = multiples_of_3_and_5
+p2 = fibo_even_sum
+p3 = largest_prime_factor
+p4 = largest_palindrome_product
+p5 = smallest_mult
+p6 = sum_square_difference
+p7 = nth_prime
+p8 = largest_product_in_a_series
+p9 = special_pythagorean_triplet
+p10 = prime_summation
+p11 = largest_grid_product
+p12 = divisible_triangle_number
+p13 = largeSum
+p14 = longestCollatzSequence
 
 __all__ = [
     'all_prime_factors', 'is_prime',
-    'problem_1', 'multiples_of_3_and_5',
-    'problem_2', 'fibo_even_sum',
-    'problem_3', 'largest_prime_factor',
-    'problem_4', 'largest_palindrome_product',
-    'problem_5', 'smallest_mult',
-    'problem_6', 'sum_square_difference',
-    'problem_7', 'nth_prime',
-    'problem_8', 'largest_product_in_a_series',
-    'problem_9', 'special_pythagorean_triplet',
-    'problem_10', 'prime_summation',
-    'problem_11', 'largest_grid_product',
-    'problem_12', 'divisible_triangle_number',
-    'problem_13', 'largeSum',
-    'problem_14', 'longestCollatzSequence'
+    'p1', 'multiples_of_3_and_5',
+    'p2', 'fibo_even_sum',
+    'p3', 'largest_prime_factor',
+    'p4', 'largest_palindrome_product',
+    'p5', 'smallest_mult',
+    'p6', 'sum_square_difference',
+    'p7', 'nth_prime',
+    'p8', 'largest_product_in_a_series',
+    'p9', 'special_pythagorean_triplet',
+    'p10', 'prime_summation',
+    'p11', 'largest_grid_product',
+    'p12', 'divisible_triangle_number',
+    'p13', 'largeSum',
+    'p14', 'longestCollatzSequence'
 ]
 
 __version__ = "0.1.0"

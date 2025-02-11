@@ -3,7 +3,7 @@
 
 import numpy as np
 
-from projecteuler import largest_grid_product
+from ..projecteuler import largest_grid_product
 
 test_grid = np.array([
   [40, 17, 81, 18, 57],

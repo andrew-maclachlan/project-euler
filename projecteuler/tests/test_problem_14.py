@@ -1,7 +1,7 @@
 """Tests for Problem 14.
 """
 
-from projecteuler import longestCollatzSequence
+from ..projecteuler import longestCollatzSequence
 
 
 def test_1():

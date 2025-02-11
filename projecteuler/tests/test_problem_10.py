@@ -1,7 +1,7 @@
 """Tests for Problem 10.
 """
 
-from projecteuler import prime_summation
+from ..projecteuler import prime_summation
 
 
 def test_1():

@@ -1,7 +1,7 @@
 """Tests for Problem 12.
 """
 
-from projecteuler import divisible_triangle_number
+from ..projecteuler import divisible_triangle_number
 
 
 def test_1():

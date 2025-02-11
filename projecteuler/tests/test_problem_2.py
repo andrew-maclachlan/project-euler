@@ -1,7 +1,7 @@
 """Tests for Problem 1.
 """
 
-from projecteuler import fibo_even_sum
+from ..projecteuler import fibo_even_sum
 
 
 def test_1():

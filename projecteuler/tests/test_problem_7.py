@@ -1,7 +1,7 @@
 """Tests for Problem 7.
 """
 
-from projecteuler import nth_prime
+from ..projecteuler import nth_prime
 
 
 def test_1():

@@ -1,7 +1,7 @@
 """Tests for Problem 9.
 """
 
-from projecteuler import special_pythagorean_triplet
+from ..projecteuler import special_pythagorean_triplet
 
 
 def test_1():

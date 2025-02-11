@@ -1,7 +1,7 @@
 """Tests for Problem 4.
 """
 
-from projecteuler import largest_palindrome_product
+from ..projecteuler import largest_palindrome_product
 
 
 def test_1():
