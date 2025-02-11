@@ -16,6 +16,7 @@ from .problem_11 import largest_grid_product
 from .problem_12 import divisible_triangle_number
 from .problem_13 import largeSum
 from .problem_14 import longestCollatzSequence
+from .problem_15 import latticePaths
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -31,6 +32,7 @@ p11 = largest_grid_product
 p12 = divisible_triangle_number
 p13 = largeSum
 p14 = longestCollatzSequence
+p15 = latticePaths
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -47,7 +49,8 @@ __all__ = [
     'p11', 'largest_grid_product',
     'p12', 'divisible_triangle_number',
     'p13', 'largeSum',
-    'p14', 'longestCollatzSequence'
+    'p14', 'longestCollatzSequence',
+    'p15', 'latticePaths',
 ]
 
 __version__ = "0.1.0"
