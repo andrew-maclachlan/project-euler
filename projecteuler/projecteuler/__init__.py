@@ -17,6 +17,7 @@ from .problem_12 import divisible_triangle_number
 from .problem_13 import largeSum
 from .problem_14 import longestCollatzSequence
 from .problem_15 import latticePaths
+from .problem_16 import powerDigitSum
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -33,6 +34,7 @@ p12 = divisible_triangle_number
 p13 = largeSum
 p14 = longestCollatzSequence
 p15 = latticePaths
+p16 = powerDigitSum
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -51,6 +53,7 @@ __all__ = [
     'p13', 'largeSum',
     'p14', 'longestCollatzSequence',
     'p15', 'latticePaths',
+    'p16', 'powerDigitSum'
 ]
 
 __version__ = "0.1.0"
