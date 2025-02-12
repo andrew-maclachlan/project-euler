@@ -18,6 +18,6 @@ def test_3():
     """countingSundays(1995, 2000) should return 10."""
     assert countingSundays(1995, 2000) == 10
 
-def test_3():
+def test_4():
     """countingSundays(1901, 2000) should return 171."""
     assert countingSundays(1901, 2000) == 171
