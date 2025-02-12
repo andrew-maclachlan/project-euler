@@ -19,6 +19,7 @@ from .problem_14 import longestCollatzSequence
 from .problem_15 import latticePaths
 from .problem_16 import powerDigitSum
 from .problem_17 import numberLetterCounts
+from .problem_18 import maximumPathSumI
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -37,6 +38,7 @@ p14 = longestCollatzSequence
 p15 = latticePaths
 p16 = powerDigitSum
 p17 = numberLetterCounts
+p18 = maximumPathSumI
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -56,7 +58,8 @@ __all__ = [
     'p14', 'longestCollatzSequence',
     'p15', 'latticePaths',
     'p16', 'powerDigitSum',
-    'p17', 'numberLetterCounts'
+    'p17', 'numberLetterCounts',
+    'p18', 'maximumPathSumI'
 ]
 
 __version__ = "0.1.0"
