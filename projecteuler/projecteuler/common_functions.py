@@ -1,17 +1,16 @@
 """Sub-module of project-euler containing any functions that are used by more than one problem.
 """
 
-from typing import List
 from math import sqrt, ceil
 
 
-def all_prime_factors(number: int) -> List[int]:
+def all_prime_factors(number: int) -> list[int]:
     """Return a list of all prime factors of a given integer.
     """
     return _all_prime_factors_recursion(number)
 
 
-def _all_prime_factors_recursion(number: int, prime_list=None) -> List[int]:
+def _all_prime_factors_recursion(number: int, prime_list=None) -> list[int]:
     # Initialise List
     if prime_list is None:
         prime_list = []
@@ -55,3 +54,17 @@ def is_prime(n: int) -> bool:
             return False
 
     return True
+
+def proper_devisors(n: int) -> list[int]:
+    """Return the set of all proper divisors of an integer n
+
+    Args:
+        n (int): Integer to get the proper divisors for.
+    
+    Returns:
+        list[int]: A list of all the proper divisors
+
+    Notes:
+        Proper Divisors: https://en.wikipedia.org/wiki/Divisor#proper_divisor
+    """
+    return list({i for i in range(1, n) if n % i == 0})
