@@ -21,6 +21,7 @@ from .problem_16 import powerDigitSum
 from .problem_17 import numberLetterCounts
 from .problem_18 import maximumPathSumI
 from .problem_19 import countingSundays
+from .problem_20 import sumFactorialDigits
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -41,6 +42,7 @@ p16 = powerDigitSum
 p17 = numberLetterCounts
 p18 = maximumPathSumI
 p19 = countingSundays
+p20 = sumFactorialDigits
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -62,7 +64,8 @@ __all__ = [
     'p16', 'powerDigitSum',
     'p17', 'numberLetterCounts',
     'p18', 'maximumPathSumI',
-    'p19', 'countingSundays'
+    'p19', 'countingSundays',
+    'p20', 'sumFactorialDigits'
 ]
 
 __version__ = "0.1.0"
