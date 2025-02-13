@@ -138,11 +138,3 @@ def _hundred_int_to_str(num):
 
 	# Return the list as a string
 	return " ".join(number_list_str_clean)
-
-print(int_to_str(1))
-print(int_to_str(12))
-print(int_to_str(21))
-print(int_to_str(121))
-print(int_to_str(1234))
-print(int_to_str(12345))
-print(int_to_str(1234567))
