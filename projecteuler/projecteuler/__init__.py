@@ -23,6 +23,7 @@ from .problem_18 import maximumPathSumI
 from .problem_19 import countingSundays
 from .problem_20 import sumFactorialDigits
 from .problem_21 import sumAmicableNum
+from .problem_22 import namesScores
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -45,6 +46,7 @@ p18 = maximumPathSumI
 p19 = countingSundays
 p20 = sumFactorialDigits
 p21 = sumAmicableNum
+p22 = namesScores
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -69,6 +71,7 @@ __all__ = [
     'p19', 'countingSundays',
     'p20', 'sumFactorialDigits',
     'p21', 'sumAmicableNum',
+    'p22,', 'namesScores'
 ]
 
 __version__ = "0.1.0"
