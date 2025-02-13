@@ -1,4 +1,4 @@
-"""Tests for Problem 19.
+"""Tests for Problem 20.
 """
 
 from ..projecteuler import sumFactorialDigits
