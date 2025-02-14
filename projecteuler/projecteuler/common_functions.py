@@ -55,7 +55,7 @@ def is_prime(n: int) -> bool:
 
     return True
 
-def proper_devisors(n: int) -> list[int]:
+def proper_devisors(n: int) -> set[int]:
     """Return the set of all proper divisors of an integer n
 
     Args:
@@ -67,4 +67,4 @@ def proper_devisors(n: int) -> list[int]:
     Notes:
         Proper Divisors: https://en.wikipedia.org/wiki/Divisor#proper_divisor
     """
-    return list({i for i in range(1, n) if n % i == 0})
+    return {i for i in range(1, n) if n % i == 0}
