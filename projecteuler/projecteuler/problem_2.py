@@ -11,7 +11,7 @@ even-valued terms.
 
 
 def fibo_even_sum(n: int) -> int:
-    """Return the sum of all even numbers in the fibonacci sequence of length n.
+    """Return the sum of all even numbers in the fibonacci sequence that are under the value of n.
 
     Args:
         n (int):
