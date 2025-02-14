@@ -6,7 +6,7 @@ from ..projecteuler import namesScores
 test1 = ['THIS', 'IS', 'ONLY', 'A', 'TEST']
 test2 = ['I', 'REPEAT', 'THIS', 'IS', 'ONLY', 'A', 'TEST']
 
-with open('../data/names.txt', 'r') as f:
+with open('data/names.txt', 'r') as f:
     names = f.read()
 
 names = names.replace('"', '').split(',')
