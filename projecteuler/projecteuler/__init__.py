@@ -27,6 +27,7 @@ from .problem_22 import namesScores
 from .problem_23 import sumOfNonAbundantNumbers
 from .problem_24 import lexicographicPermutations
 from .problem_25 import digitFibonacci
+from .problem_26 import reciprocalCycles
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -53,6 +54,7 @@ p22 = namesScores
 p23 = sumOfNonAbundantNumbers
 p24 = lexicographicPermutations
 p25 = digitFibonacci
+p26 = reciprocalCycles
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -80,7 +82,8 @@ __all__ = [
     'p22,', 'namesScores',
     'p23', 'sumOfNonAbundantNumbers',
     'p24', 'lexicographicPermutations'
-    'p25', 'digitFibonacci'
+    'p25', 'digitFibonacci',
+    'p26', 'reciprocalCycles'
 ]
 
 __version__ = "0.1.0"
