@@ -24,43 +24,39 @@ def reciprocalCycles(limit : int) -> int:
     Return:
         int: Denominator that returns the decimal with the longest recurring cycle.
     """
-    # Calulate decimals
-    decimals = [_unit_fraction_calculator(n, 10000) for n in range(2, limit)]
-
-    # Extract the portion after the . as a string
-    strings = [str(n).split('.')[1] for n in decimals]
-
-    # Reverse the strings
-    reverse_strings = [s[::-1] for s in strings]
-
-    # Repeat Unit Lengths
-    repeat_unit_lengths = [
-        min([len(s[:i]) for i in range(1, len(s)) if s[:(i * 2)] == (s[:i] * 2)], default=0)
-        for s in reverse_strings]
+    # Repeat decimal lengths
+    repeat_unit_lengths = [_unit_fraction_generator(n) for n in range(1, limit)]
 
     # Index with max repeat unit length
     max_index = repeat_unit_lengths.index(max(repeat_unit_lengths))
 
-    # Return + 2 as the range started at 2 
-    return max_index + 2
+    # Return + 1 to account for 0 vs 1 indexed list
+    return max_index + 1
 
 
 def _unit_fraction_generator(devisor: int):
+    # Dividend starts at 10 
     dividend = 10
-    answer_string = '0.'
 
+    # Dictionary to track which remainders have been seen before, value is i where seen
+    seen_remainders = {}
+
+    i = 0
     while True:
-        calc = divmod(dividend, devisor)
+        # Get the quotient and remainder
+        _, remainder = divmod(dividend, devisor)
 
-        answer_string += str(calc[0])
-        dividend = int(calc[1] * 10)
+        # No remainder means no repeating decimals in result
+        if not remainder:
+            return 0
 
-        yield answer_string
-
-
-def _unit_fraction_calculator(devisor: int, n_decimals: int = 10):
-    step = _unit_fraction_generator(devisor)
-
-    all_steps = [next(step) for _ in range(n_decimals)]
-
-    return all_steps[-1]
+        # If the remainder has been seen before then the decimal loop is about to repeat
+        if remainder in seen_remainders:
+            # Return current difference between time remainder last seen and current i
+            return i - seen_remainders[remainder]
+        
+        # If remainder not seen before then add to the dictionary and pass the remainder as the new dividend
+        if remainder not in seen_remainders:
+            seen_remainders[remainder] = i
+            dividend = remainder * 10
+            i += 1
