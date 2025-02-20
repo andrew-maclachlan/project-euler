@@ -29,6 +29,7 @@ from .problem_24 import lexicographicPermutations
 from .problem_25 import digitFibonacci
 from .problem_26 import reciprocalCycles
 from .problem_27 import quadraticPrimes
+from .problem_28 import spiralDiagonals
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -57,6 +58,7 @@ p24 = lexicographicPermutations
 p25 = digitFibonacci
 p26 = reciprocalCycles
 p27 = quadraticPrimes
+p28 = spiralDiagonals
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -86,7 +88,8 @@ __all__ = [
     'p24', 'lexicographicPermutations'
     'p25', 'digitFibonacci',
     'p26', 'reciprocalCycles',
-    'p27', 'quadraticPrimes'
+    'p27', 'quadraticPrimes',
+    'p28', 'spiralDiagonals'
 ]
 
 __version__ = "0.1.0"
