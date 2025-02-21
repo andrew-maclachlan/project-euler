@@ -30,6 +30,7 @@ from .problem_25 import digitFibonacci
 from .problem_26 import reciprocalCycles
 from .problem_27 import quadraticPrimes
 from .problem_28 import spiralDiagonals
+from .problem_29 import distinctPowers
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -59,6 +60,7 @@ p25 = digitFibonacci
 p26 = reciprocalCycles
 p27 = quadraticPrimes
 p28 = spiralDiagonals
+p29 = distinctPowers
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -89,7 +91,8 @@ __all__ = [
     'p25', 'digitFibonacci',
     'p26', 'reciprocalCycles',
     'p27', 'quadraticPrimes',
-    'p28', 'spiralDiagonals'
+    'p28', 'spiralDiagonals',
+    'p29', 'distinctPowers'
 ]
 
 __version__ = "0.1.0"
