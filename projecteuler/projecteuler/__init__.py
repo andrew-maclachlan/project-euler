@@ -32,6 +32,7 @@ from .problem_27 import quadraticPrimes
 from .problem_28 import spiralDiagonals
 from .problem_29 import distinctPowers
 from .problem_30 import digitnPowers
+from .problem_31 import coinSums
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -63,6 +64,7 @@ p27 = quadraticPrimes
 p28 = spiralDiagonals
 p29 = distinctPowers
 p30 = digitnPowers
+p31 = coinSums
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -95,7 +97,8 @@ __all__ = [
     'p27', 'quadraticPrimes',
     'p28', 'spiralDiagonals',
     'p29', 'distinctPowers',
-    'p30', 'digitnPowers'
+    'p30', 'digitnPowers',
+    'p31', 'coinSums'
 ]
 
 __version__ = "0.1.0"
