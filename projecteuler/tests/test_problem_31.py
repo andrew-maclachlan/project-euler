@@ -1,4 +1,4 @@
-"""Tests for Problem 29.
+"""Tests for Problem 31.
 """
 
 from ..projecteuler import coinSums

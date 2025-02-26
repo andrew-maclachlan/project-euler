@@ -1,4 +1,4 @@
-"""Tests for Problem 29.
+"""Tests for Problem 30.
 """
 
 from ..projecteuler import digitnPowers
