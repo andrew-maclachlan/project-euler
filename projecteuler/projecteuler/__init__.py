@@ -95,7 +95,7 @@ __all__ = [
     'p19', 'countingSundays',
     'p20', 'sumFactorialDigits',
     'p21', 'sumAmicableNum',
-    'p22,', 'namesScores',
+    'p22', 'namesScores',
     'p23', 'sumOfNonAbundantNumbers',
     'p24', 'lexicographicPermutations'
     'p25', 'digitFibonacci',
