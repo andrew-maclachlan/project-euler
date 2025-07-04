@@ -36,6 +36,7 @@ from .problem_31 import coinSums
 from .problem_32 import pandigitalProducts
 from .problem_33 import digitCancellingFractions
 from .problem_34 import digitFactorial
+from .problem_35 import circularPrimes
 
 p1 = multiples_of_3_and_5
 p2 = fibo_even_sum
@@ -71,6 +72,7 @@ p31 = coinSums
 p32 = pandigitalProducts
 p33 = digitCancellingFractions
 p34 = digitFactorial
+p35 = circularPrimes
 
 __all__ = [
     'all_prime_factors', 'is_prime',
@@ -107,7 +109,8 @@ __all__ = [
     'p31', 'coinSums',
     'p32', 'pandigitalProducts',
     'p33', 'digitCancellingFractions',
-    'p34', 'digitFactorial'
+    'p34', 'digitFactorial',
+    'p35', 'circularPrimes'
 ]
 
 __version__ = "0.1.0"
