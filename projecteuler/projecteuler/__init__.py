@@ -99,7 +99,7 @@ __all__ = [
     'p21', 'sumAmicableNum',
     'p22', 'namesScores',
     'p23', 'sumOfNonAbundantNumbers',
-    'p24', 'lexicographicPermutations'
+    'p24', 'lexicographicPermutations',
     'p25', 'digitFibonacci',
     'p26', 'reciprocalCycles',
     'p27', 'quadraticPrimes',
